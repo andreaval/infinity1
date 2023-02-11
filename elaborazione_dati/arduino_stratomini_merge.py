@@ -1,6 +1,8 @@
 '''
 Script Python che esegue il merge dei due file CSV raccolti dalla sonda
 creando un unico file CSV
+@author Infinity1 Team - Liceo "E. Medi" Montegiorgio (FM)
+@date 2022-11-20 Last review
 '''
 import csv
 fileA = input("CSV dati Arduino: ")
