@@ -1,7 +1,11 @@
+'''
+Script Python che esegue il merge dei due file CSV raccolti dalla sonda
+creando un unico file CSV
+'''
 import csv
-fileA = input("File Arduino: ")
-fileS = input("File Stratomini: ")
-fileM = input("File merge: ")
+fileA = input("CSV dati Arduino: ")
+fileS = input("CSV dati Stratomini: ")
+fileM = input("CSV di output: ")
 with open(fileM,'w',newline="") as csvM:
     writer = csv.writer(csvM,delimiter=';',quotechar='"',quoting=csv.QUOTE_MINIMAL)
     with open(fileS) as csvS:
