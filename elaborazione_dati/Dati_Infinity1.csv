@@ -1,4 +1,4 @@
- Secondi;UTC;Lan;Lon;Speed Over ground (km/h);Course OG;Altitude1 (m);Int_temp (C);Ext_temp (C);Pressure (pa);Altitude2 (m);Ext_umidity (%);O3 (ppm);CO2_raw (ppm);CO2_el2 (ppm)
+ Secondi;UTC;Lan;Lon;SOP;COG;Alt1;Int_temp;Ext_temp;Ext_press;Alt2;Ext_um;O3;CO2_raw;CO2_el2
 0;11:48:30;42 38.23758 N;012 33.07254 E;;;390,60;31,88;18,10;97.615;405,64;65,23;0,02;213,62;415,00
 2;11:48:32;42 38.24682 N;012 33.07381 E;;;398,10;32,00;18,07;97.530;413,10;65,00;0,02;209,50;414,69
 4;11:48:34;42 38.25797 N;012 33.07426 E;;;413,10;32,00;18,01;97.385;425,81;64,96;0,02;196,54;413,97
