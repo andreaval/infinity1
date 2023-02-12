@@ -38,7 +38,6 @@ float o3;
 //anidride carbonica
 float co2;
 float co2_b;
-float rzero;
 //conteggio secondi
 unsigned int sec=0;
 //separatore valori nel file di log
@@ -105,6 +104,8 @@ void setup(){
   Oled.println("MQ131 OK");
   //MQ135 già avviato
   Oled.println("MQ135 OK");
+  //float rzero = mq135_sensor.getRZero();
+  //rzero = mq135_sensor.getCorrectedRZero(t,u);
   delay(5000);
   Oled.clearDisplay();
 }
@@ -118,9 +119,6 @@ void loop() {
   u=dht20.getHumidity()*100;
   MQ131.setEnv(t,u);
   o3 = MQ131.getO3(PPM);
-
-  float rzero = mq135_sensor.getRZero();
-  rzero = mq135_sensor.getCorrectedRZero(t,u);
   co2_raw = mq135_sensor.getPPM();
   co2 = mq135_sensor.getCorrectedPPM(t,u);
 
